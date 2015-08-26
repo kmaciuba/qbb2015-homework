@@ -28,10 +28,10 @@ A= 0.5 * (bf4 + df4)
 #print A
 
 plt.figure()
-plt.plot(list(M), list(A), 'mo')
+plt.plot(list(A), list(M), 'mo')
 plt.title("MA Plot")
-plt.xlabel("M")
-plt.ylabel("A")
+plt.xlabel("A")
+plt.ylabel("M")
 plt.savefig("MAplot.png")
 
 
