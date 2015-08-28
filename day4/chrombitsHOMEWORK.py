@@ -52,16 +52,15 @@ class ChromosomeLocationBitArrays( object ):
     def homework(self):
 
         interval=[]
-        for key, value in self.arrays.iteritems():
-            chrom= key
-            if chrom== "chr2L":
-                for i in range(0, len(value)-1, 1):
-                    if value[i]+value[i+1]==1:
+        for chrom, value in self.arrays.iteritems():
+            #if chrom== "chr2L":
+            for i in range(len(value)):
+                if i!=len(value)-1:
+                    if value[i]==0 and value[i+1]==1:
                         start=i+1
-                        if value[i]-value[i+1]==1:
-                            stop=i
-                            interval.append((chrom, start, stop))
-                
+                    if value[i]==1 and value[i+1]==0:
+                        stop=i
+                        interval.append((chrom, start, stop))
         return interval
             
                     

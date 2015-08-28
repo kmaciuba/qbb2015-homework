@@ -3,11 +3,11 @@
 from __future__ import division
 
 import sys
-import chrombits
+import chrombitsHOMEWORK
 
 
 
-arr = chrombits.ChromosomeLocationBitArrays( fname=sys.argv[1] )
+arr = chrombitsHOMEWORK.ChromosomeLocationBitArrays( fname=sys.argv[1] )
 
 ctcf = arr.copy()
 beaf = arr.copy()
@@ -21,7 +21,7 @@ new = beaf.intersect( ctcf.complement() )
 ############
 
 
-x=beaf.homework()
+x=new.homework()
 
 
 print  x
