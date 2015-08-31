@@ -45,7 +45,7 @@ plt.title('Evalue')
 plt.xlim(-50, 10)
 plt.savefig("Evalue.png")
 
-
+'''
 
 plt.figure()
 plt.scatter(list(Score), list(Evalue))
@@ -54,3 +54,4 @@ plt.ylabel('log evalue')
 plt.title('Score vs Evalue')
 plt.savefig("scorevsevalue.png")
 
+'''
